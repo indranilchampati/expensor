@@ -4,9 +4,9 @@ import * as UserController from "../controller/UserController.js";
 const router = Router();
 
 router.get(
-    "/",
-    passport.authenticate("jwt", { session: false }),
-    UserController.index
+  "/",
+  passport.authenticate("jwt", { session: false }),
+  UserController.index
 );
 
 export default router;
